@@ -1,0 +1,108 @@
+.btn {
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 18px 26px;
+  font-size: 18px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: inline-block;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:before, .btn:after {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  background: #ffffff40;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1F509F;
+  border-color: #1F509F;
+}
+
+.btn-primary-outline {
+  color: #1F509F;
+  border-color: #1F509F;
+  background-color: #fff;
+}
+
+.btn-primary-outline:before, .btn-primary-outline:after {
+  background: #b4b4b440;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #F29D4B;
+  border-color: #F29D4B;
+}
+
+.btn-warning-outline {
+  color: #F29D4B;
+  border-color: #F29D4B;
+  background-color: #fff;
+}
+
+.btn-light {
+  color: #1F509F;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-light:before, .btn-light:after {
+  background: #b4b4b440;
+}
+
+.btn-light-outline {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1F509F;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.btn:hover:before {
+  -webkit-animation: drop 1.5s linear 0s infinite;
+          animation: drop 1.5s linear 0s infinite;
+}
+
+.btn:hover:after {
+  -webkit-animation: drop 1.5s linear 0.35s infinite;
+          animation: drop 1.5s linear 0.35s infinite;
+}
+
+@-webkit-keyframes drop {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 125%;
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 125%;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=buttons.css.map */

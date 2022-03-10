@@ -1,0 +1,63 @@
+@import "./colors";
+
+.btn {
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 18px 26px;
+    font-size: 18px;
+    transition: all 0.3s linear;
+    display: inline-block;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+
+    &-primary {
+        color: #fff;
+        background-color: $clr-blue;
+        border-color: $clr-blue;
+
+        &-outline {
+            color: $clr-blue;
+            border-color: $clr-blue;
+            background-color: #fff;
+
+            &:before, &:after {
+                background: #b4b4b440;
+            }
+        }
+    }
+
+    &-warning {
+        color: #fff;
+        background-color: $clr-orange;
+        border-color: $clr-orange;
+
+        &-outline {
+            color: $clr-orange;
+            border-color: $clr-orange;
+            background-color: #fff;
+        }
+    }
+
+    &-light {
+        color: $clr-blue;
+        background-color: #fff;
+        border-color: #fff;
+
+        &:before, &:after {
+            background: #b4b4b440;
+        }
+
+        &-outline {
+            color: #fff;
+            border-color: #fff;
+            background-color: $clr-blue;
+        }
+    }
+
+    &-sm {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
